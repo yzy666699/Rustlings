@@ -31,3 +31,14 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
+fn calculate_price_of_apples(number:i32)->i32{
+    let condition = if number<= 40 {
+        1
+    }else{
+        2
+    };
+
+    if condition ==1{ number*2 }
+    else {  number }
+}
